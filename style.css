@@ -1,0 +1,183 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 100%, hsla(272, 26%, 72%, 1) 100%);
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #333, lightgray, #333);
+    border-radius: 50%;
+}
+
+.dial {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 190px;
+    height: 190px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(120deg, lightgray, white, lightgray, white);
+    border:5px solid #333;
+    border-radius: 50%;
+}
+
+.innerDial {
+    position: absolute;
+    width:160px;
+    height: 160px;
+    background: radial-gradient(lightgray, white, lightgray);
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.dialCenter {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.dial__text {
+    position: absolute;
+    z-index: 9;
+    top:65%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
+
+.number {
+    position: absolute;
+    color: white;
+    padding: 5px;
+    z-index: 2;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    -webkit-text-stroke: 2px black;
+}
+
+.number12 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.number3 {
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+
+.number6 {
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+}
+
+.number9 {
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.marking {
+    height:180px;
+    width:2px;
+    background-color: #333;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform-origin: 1px 90px;
+    transform: translate(-50%, -50%);
+}
+
+.marking1 {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.marking2 {
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.marking3 {
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.marking4 {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.marking5 {
+    transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.marking6 {
+    transform: translate(-50%, -50%) rotate(150deg);
+}
+
+.marking7 {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.marking8 {
+    transform: translate(-50%, -50%) rotate(210deg);
+}
+
+.hand {
+    position: absolute;
+    z-index: 10;
+}
+
+.secondsHand {
+    width: 2px;
+    height: 90px;
+    background-color: #333;
+    left:50%;
+    top: 10px;
+    z-index: 13;
+    transform-origin: 1px 80px;
+    transform: translateX(-50%) rotate(50deg);
+}
+
+.minutesHand {
+    width: 4px;
+    height: 70px;
+    background-color: goldenrod;
+    border: 1.5px solid #333;
+    left:50%;
+    top: 20px;
+    z-index: 12;
+    transform-origin: 2px 70px;
+    transform: translateX(-50%) rotate(200deg);
+}
+
+.hoursHand {
+    width: 6px;
+    height: 40px;
+    background-color: goldenrod;
+    border: 2px solid #333;
+    left:50%;
+    top: 50px;
+    z-index: 11;
+    transform-origin: 3px 40px;
+    transform: translateX(-50%) rotate(1250deg);
+}
+
