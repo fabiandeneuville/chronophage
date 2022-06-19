@@ -41,6 +41,18 @@ body {
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.innerDial2 {
+    position: absolute;
+    width:175px;
+    height: 175px;
+    background: radial-gradient(lightgray, white, lightgray);
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -70,7 +82,7 @@ body {
     position: absolute;
     color: white;
     padding: 5px;
-    z-index: 2;
+    z-index: 4;
     font-family: 'Dancing Script', cursive, Arial, Helvetica, sans-serif;
     font-size: 35px;
     -webkit-text-stroke: 2px black;
@@ -111,35 +123,133 @@ body {
 
 .marking1 {
     transform: translate(-50%, -50%) rotate(0deg);
+    z-index: 2;
 }
 
 .marking2 {
-    transform: translate(-50%, -50%) rotate(30deg);
+    transform: translate(-50%, -50%) rotate(6deg);
 }
 
 .marking3 {
-    transform: translate(-50%, -50%) rotate(60deg);
+    transform: translate(-50%, -50%) rotate(12deg);
 }
 
 .marking4 {
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(18deg);
 }
 
 .marking5 {
-    transform: translate(-50%, -50%) rotate(120deg);
+    transform: translate(-50%, -50%) rotate(24deg);
 }
 
 .marking6 {
-    transform: translate(-50%, -50%) rotate(150deg);
+    transform: translate(-50%, -50%) rotate(30deg);
+    z-index: 2;
 }
 
 .marking7 {
-    transform: translate(-50%, -50%) rotate(180deg);
+    transform: translate(-50%, -50%) rotate(36deg);
 }
 
 .marking8 {
-    transform: translate(-50%, -50%) rotate(210deg);
+    transform: translate(-50%, -50%) rotate(42deg);
 }
+
+.marking9 {
+    transform: translate(-50%, -50%) rotate(48deg);
+}
+
+.marking10 {
+    transform: translate(-50%, -50%) rotate(54deg);
+}
+
+.marking11 {
+    transform: translate(-50%, -50%) rotate(60deg);
+    z-index: 2;
+}
+
+.marking12 {
+    transform: translate(-50%, -50%) rotate(66deg);
+}
+
+.marking13 {
+    transform: translate(-50%, -50%) rotate(72deg);
+}
+
+.marking14 {
+    transform: translate(-50%, -50%) rotate(78deg);
+}
+
+.marking15 {
+    transform: translate(-50%, -50%) rotate(84deg);
+}
+
+.marking16 {
+    transform: translate(-50%, -50%) rotate(90deg);
+    z-index: 2;
+}
+
+.marking17 {
+    transform: translate(-50%, -50%) rotate(96deg);
+}
+
+.marking18 {
+    transform: translate(-50%, -50%) rotate(102deg);
+}
+
+.marking19 {
+    transform: translate(-50%, -50%) rotate(108deg);
+}
+
+.marking20 {
+    transform: translate(-50%, -50%) rotate(114deg);
+}
+
+.marking21 {
+    transform: translate(-50%, -50%) rotate(120deg);
+    z-index: 2;
+}
+
+.marking22 {
+    transform: translate(-50%, -50%) rotate(126deg);
+}
+
+.marking23 {
+    transform: translate(-50%, -50%) rotate(132deg);
+}
+
+.marking24 {
+    transform: translate(-50%, -50%) rotate(138deg);
+}
+
+.marking25 {
+    transform: translate(-50%, -50%) rotate(144deg);
+}
+
+.marking26 {
+    transform: translate(-50%, -50%) rotate(150deg);
+    z-index: 2;
+}
+
+.marking27 {
+    transform: translate(-50%, -50%) rotate(156deg);
+}
+
+.marking28 {
+    transform: translate(-50%, -50%) rotate(162deg);
+}
+
+.marking29 {
+    transform: translate(-50%, -50%) rotate(168deg);
+}
+
+.marking30 {
+    transform: translate(-50%, -50%) rotate(174deg);
+}
+
+
+
+
 
 .hand {
     position: absolute;
@@ -149,7 +259,7 @@ body {
 .secondsHand {
     width: 2px;
     height: 90px;
-    background-color: #333;
+    background-color: crimson;
     left:50%;
     top: 10px;
     z-index: 113;
